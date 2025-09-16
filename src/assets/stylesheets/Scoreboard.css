@@ -1,0 +1,26 @@
+.scoreboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 2rem;
+    gap: 1.25rem;
+    padding: 0.5rem;
+    border-radius: 0.35rem;
+    border: 1.5px solid var(--accent-color);
+}
+
+.scoreboard > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.current-score, .best-score {
+    font-weight: 600;
+}
+
+@media (min-width: 96rem) {
+    .scoreboard {
+        border: 2.5px solid var(--accent-color);
+        font-size: var(--fs-md);
+    }
+}

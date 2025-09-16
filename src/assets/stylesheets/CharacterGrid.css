@@ -1,0 +1,150 @@
+.character-grid {
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.character-grid img {
+    cursor: pointer;
+    width: 130px;
+    aspect-ratio: 1 / 1;
+}
+
+@media (min-width: 48rem) {
+    main {
+        padding: 1rem;
+    }
+
+    .character-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .character-grid img {
+        width: 160px;
+        border: 3px solid transparent;
+    }
+
+    .character-grid img:hover {
+        border: 3px solid var(--accent-color);
+    }
+}
+
+@media (min-width: 64rem) {
+    main {
+        padding: 1.25rem;
+    }
+
+    .character-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .character-grid img {
+        width: 180px;
+    }
+}
+
+@media (min-width: 80rem) {
+    .character-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .character-grid img {
+        width: 200px;
+    }
+}
+
+@media (min-width: 96rem) {
+    .character-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .character-grid img {
+        width: 240px;
+    }
+}
+
+.portrait-wrapper {
+    border: 2px solid transparent;
+    transition: 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    position: relative;
+}
+
+.portrait-wrapper:hover {
+    border: 2px solid var(--accent-color);
+}
+
+/* .portrait-wrapper:focus {
+    border: 2px solid var(--accent-color);
+    outline-style: solid;
+    outline-width: 2px;
+    outline-color: var(--accent-color);
+} */
+
+.portrait-wrapper::before {
+    content: 'filler';
+    z-index: 2;
+    position: absolute;
+    width: calc(100%);
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: var(--fs-sm);
+    text-align: center;
+    background-color: var(--accent-low-opacity);
+}
+
+@media (min-width: 48rem) {
+    .portrait-wrapper::before {
+        width: calc(100% - 4px);
+    }
+}
+
+.portrait-wrapper:has(#guts-portrait)::before {
+    content: 'Guts';
+}
+
+.portrait-wrapper:has(#casca-portrait)::before {
+    content: 'Casca';
+}
+
+.portrait-wrapper:has(#erica-portrait)::before {
+    content: 'Erica';
+}
+
+.portrait-wrapper:has(#farnese-portrait)::before {
+    content: 'Farnese';
+}
+
+.portrait-wrapper:has(#isidro-portrait)::before {
+    content: 'Isidro';
+}
+
+.portrait-wrapper:has(#ivalera-portrait)::before {
+    content: 'Ivalera';
+}
+
+.portrait-wrapper:has(#puck-portrait)::before {
+    content: 'Puck';
+}
+
+.portrait-wrapper:has(#rickert-portrait)::before {
+    content: 'Rickert';
+}
+
+.portrait-wrapper:has(#schierke-portrait)::before {
+    content: 'Schierke';
+}
+
+.portrait-wrapper:has(#serpico-portrait)::before {
+    content: 'Serpico';
+}

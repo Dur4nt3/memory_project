@@ -1,4 +1,13 @@
-@import url(./assets/stylesheets/fonts.css);
+@font-face {
+    font-family: Montserrat;
+    src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(./assets/fonts/Montserrat-Italic-VariableFont_wght.ttf);
+    font-style: italic;
+}
 
 :root {
     --font-stack:
@@ -12,8 +21,34 @@
     --fs-xl: clamp(1.95rem, 1.43vi + 1.67rem, 2.81rem);
     --fs-xxl: clamp(2.44rem, 2.18vi + 2.01rem, 3.75rem);
     --fs-xxxl: clamp(3.05rem, 3.24vi + 2.4rem, 5rem);
+
+    color-scheme: dark;
+
+    --text-main: #FDFDFD;
+    --text-alt: #0D0C0C;
+    --background-color: #0D0C0C;
+
+    --link-not-visited: #6684FF;
+    --link-visited: #6C499E;
+
+    --accent-color: #ff0441;
+    --accent-low-opacity: rgba(255, 4, 65, 0.8);
 }
 
 body {
-    font-family: var(--font-stack);
+    font-family: Montserrat, var(--font-stack);
+    background-color: var(--background-color);
+    color: var(--text-main);
+}
+
+#root {
+    min-height: 100svh;
+    flex-direction: column;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-style: italic;
 }
