@@ -1,7 +1,13 @@
+import AppHeader from './modules/components/AppHeader';
+import MainCont from './modules/components/MainCont';
+import Footer from './modules/components/Footer';
+
 function App() {
     return (
         <>
-            <h1>React is up and running!</h1>
+            <AppHeader />
+            <MainCont />
+            <Footer />
         </>
     );
 }

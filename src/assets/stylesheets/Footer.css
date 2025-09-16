@@ -1,0 +1,13 @@
+footer {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer > a {
+    transition: 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+footer > a:hover {
+    transform: translateY(-0.15rem);
+}
