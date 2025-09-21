@@ -1,5 +1,3 @@
-import secret from '../../../secret.json';
-
 const roundGifsIds = [
     'koPZEcZ0inEIg',
     '11eAnLbBcK6X8Q',
@@ -14,36 +12,29 @@ const roundGifsIds = [
 ];
 
 export default async function fetchGif(type) {
-    const { key } = secret;
+    const key = 'z6MWDuupxTJwFGjDxMQNe5HO2U8BC0Yi';
     let targetUrl = 'https://api.giphy.com/v1/gifs/';
 
     if (type === 'round') {
         const gifId =
             roundGifsIds[Math.floor(Math.random() * roundGifsIds.length)];
         targetUrl += `${gifId}?api_key=${key}`;
-    }
-
-    else if (type === 'lose') {
+    } else if (type === 'lose') {
         const gifId = 'p4w0AMZJa2EtG';
         targetUrl += `${gifId}?api_key=${key}`;
-    }
-
-    else if (type === 'win') {
+    } else if (type === 'win') {
         const gifId = 'XR9cbNEfzDrFe';
         targetUrl += `${gifId}?api_key=${key}`;
-    } 
-    
-    else if (type === 'initial') {
+    } else if (type === 'initial') {
         const gifId = 'v2c1tTPc30szC';
         targetUrl += `${gifId}?api_key=${key}`;
     }
 
-    
     const response = await fetch(targetUrl);
     if (response.status === 200) {
         const json = await response.json();
 
-        return json.data.images.original.url
-    } 
+        return json.data.images.original.url;
+    }
     return 'error';
 }
