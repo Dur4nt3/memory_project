@@ -9,6 +9,8 @@ This project is used to practice the usage of the "useEffect" hook.
 In particular, this project aims to create an application that can synchronize the fetching of an API resource with a React component.
 *This is done by fetching a Gif via the Giphy API on certain renders.*
 
+**You can preview the project at: https://dantesmemorygame.netlify.app/**
+
 ## Skills Demonstrated
 
 - React
