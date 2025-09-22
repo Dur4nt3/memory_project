@@ -1,21 +1,15 @@
 header {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     text-align: center;
 }
 
 header > h1 {
-    font-size: var(--fs-xxl);
+    font-size: var(--fs-xl);
 }
 
 @media (min-width: 48rem) {
     .header-info {
         font-size: var(--fs-base);
-    }
-}
-
-@media (min-width: 96rem) {
-    .header-info {
-        font-size: var(--fs-md);
     }
 }
 

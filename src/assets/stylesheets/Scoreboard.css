@@ -1,9 +1,9 @@
 .scoreboard {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 2rem;
+    margin-bottom: 1.25rem;
     gap: 1.25rem;
-    padding: 0.5rem;
+    padding: 0.35rem;
     border-radius: 0.35rem;
     border: 1.5px solid var(--accent-color);
 }
@@ -21,6 +21,6 @@
 @media (min-width: 96rem) {
     .scoreboard {
         border: 2.5px solid var(--accent-color);
-        font-size: var(--fs-md);
+        font-size: var(--fs-base);
     }
 }

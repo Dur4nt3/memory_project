@@ -9,6 +9,13 @@ const roundGifsIds = [
     'YnQWBOGVavTFK',
     'u6xMPnzIyJB84',
     'kWtMaZKYMv5snM8LNy',
+    'xUA7b0xFQfOS1tW76g',
+    'FbFYBSpjI5YBT3Zled',
+    '3WnrqPEnnCQkTCWFrl',
+    'xUA7b0y7wUJEqmjV8A',
+    '3og0IFyzkJXxL8Q6li',
+    'xUA7b4X5i27fBDy8so',
+    'lXd5WPKX2F26c',
 ];
 
 export default async function fetchGif(type) {

@@ -34,10 +34,6 @@
 }
 
 @media (min-width: 64rem) {
-    main {
-        padding: 1.25rem;
-    }
-
     .character-grid {
         display: flex;
         flex-wrap: wrap;
@@ -45,7 +41,7 @@
     }
 
     .character-grid img {
-        width: 180px;
+        max-width: 160px;
     }
 }
 
@@ -57,7 +53,8 @@
     }
 
     .character-grid img {
-        width: 200px;
+        max-width: 180px;
+
     }
 }
 
@@ -69,7 +66,7 @@
     }
 
     .character-grid img {
-        width: 240px;
+        max-width: 200px;
     }
 }
 
@@ -82,13 +79,6 @@
 .portrait-wrapper:hover {
     border: 2px solid var(--accent-color);
 }
-
-/* .portrait-wrapper:focus {
-    border: 2px solid var(--accent-color);
-    outline-style: solid;
-    outline-width: 2px;
-    outline-color: var(--accent-color);
-} */
 
 .portrait-wrapper::before {
     content: 'filler';
